@@ -59,7 +59,8 @@ h1, h2 {
   height: 30%;
 }
 
-#my-name {
+.my-name {
   color: white;
   font-size: 25px;
+  padding: 6px;
 }
