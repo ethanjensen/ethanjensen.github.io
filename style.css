@@ -14,6 +14,7 @@ header, footer {
 
 h2, p {
   margin: 10px;
+  padding: 10px;
 }
 
 ul {
@@ -64,3 +65,29 @@ h1, h2 {
   font-size: 25px;
   padding: 6px;
 }
+
+/* Generated Table Formatting Garbage */
+
+.tg  {border:none;border-collapse:collapse;border-spacing:0;}
+.tg td{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;
+  padding:10px 5px;word-break:normal;}
+.tg th{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-m6gx{border-color:inherit;font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:center;
+  vertical-align:top}
+.tg .tg-4qij{font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:center;vertical-align:top}
+.tg .tg-6uti{border-color:inherit;font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:right;
+  vertical-align:top}
+.tg .tg-hlu1{font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:left;vertical-align:top}
+.tg .tg-98wp{border-color:inherit;font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:right;
+  vertical-align:top}
+.tg .tg-9efg{font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:right;vertical-align:top}
+.tg .tg-83bi{border-color:inherit;font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:center;
+  vertical-align:top}
+.tg .tg-hvap{border-color:inherit;font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:left;
+  vertical-align:top}
+.tg .tg-bld0{border-color:inherit;font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:left;
+  vertical-align:top}
+.tg .tg-egga{font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:left;vertical-align:top}
+.tg .tg-sx3s{font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:center;vertical-align:top}
+.tg .tg-vurl{font-family:Verdana, Geneva, sans-serif !important;font-size:18px;text-align:right;vertical-align:top}
