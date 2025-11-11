@@ -58,3 +58,8 @@ h1, h2 {
   width: 30%;
   height: 30%;
 }
+
+#my-name {
+  color: white;
+  font-size: 25px;
+}
