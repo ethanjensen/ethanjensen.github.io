@@ -53,3 +53,8 @@ section {
 h1, h2 {
     color: #333;
 }
+
+#portrait {
+  width: 30%;
+  height: 30%;
+}
