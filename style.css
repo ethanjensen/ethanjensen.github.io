@@ -17,7 +17,7 @@ h2, p {
   padding: 10px;
 }
 
-ul {
+ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,11 +25,11 @@ ul {
   background-color: #333333;
 }
 
-ul li {
+ul.navbar li {
   float: left;
 }
 
-ul li a {
+ul.navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -37,7 +37,7 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+ul.navbar li a:hover {
   background-color: #111111;
 }
 
