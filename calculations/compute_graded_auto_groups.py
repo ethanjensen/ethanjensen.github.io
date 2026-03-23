@@ -1,5 +1,4 @@
 from permutation import Permutation
-from fraction import Frac
 
 def get_decomposition(q):
     n = len(q)
