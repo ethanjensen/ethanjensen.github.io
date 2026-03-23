@@ -1,4 +1,4 @@
-import { get_graded_autos } from './__target__/compute_graded_auto_groups.js';
+import { get_graded_autos } from './target/compute_graded_auto_groups.js';
 
 var table = new Tabulator("#example-table", {
     data:tabledata,           //load row data from array
