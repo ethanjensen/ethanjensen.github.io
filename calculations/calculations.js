@@ -1,4 +1,4 @@
-const { exec } = require("child_process");
+import { get_automorphisms } from './__target__/compute_graded_auto_groups.js';
 
 var table = new Tabulator("#example-table", {
     data:tabledata,           //load row data from array
@@ -27,14 +27,4 @@ var table = new Tabulator("#example-table", {
     ],
 });
 
-exec("compute_graded_auto_groups.py [[1,-1],[-1,1]]", (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.error(`Stderr: ${stderr}`);
-        return;
-    }
-    console.log(`Output: ${stdout}`);
-});
+console.log(get_automorphisms([[1,-1],[-1,1]]))
