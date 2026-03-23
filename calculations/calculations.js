@@ -37,4 +37,4 @@ var table = new Tabulator("#example-table", {
     ],
 });
 
-console.log(get_automorphisms([[1,-1],[-1,1]]))
+console.log(get_graded_autos([[1,-1],[-1,1]]))
