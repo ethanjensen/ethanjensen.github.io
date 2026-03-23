@@ -37,4 +37,10 @@ var table = new Tabulator("#example-table", {
     ],
 });
 
-console.log(get_graded_autos([[1,-1],[-1,1]]))
+document.getElementById("downloadBtn").addEventListener("click", () => {
+    const result = document.getElementById("output").textContent;
+    download("result.txt", result);
+});
+
+result = get_formatted_graded_autos([[1,-1],[-1,1]]);
+document.getElementById("output").textContent = result;
