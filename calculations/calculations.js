@@ -1,4 +1,4 @@
-import { get_graded_autos } from './compute_graded_auto_groups.js';
+import { get_formatted_graded_autos } from './compute_graded_auto_groups.js';
 
 //define data array
 var tabledata = [
