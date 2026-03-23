@@ -73,6 +73,7 @@ def get_formatted_graded_autos(q):
 # MAIN CODE EXECUTION
 
 q = [[1,1,-1],[1,1,-1],[-1,-1,1]]
+q = [[1,-1],[-1,1]]
 
 print(q)
-print(get_formatted_graded_autos(q))
+print(get_graded_autos(q))

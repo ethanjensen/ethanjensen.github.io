@@ -4,6 +4,7 @@ import {Frac} from './fraction.js';
 import {Permutation} from './permutation.js';
 var __name__ = '__main__';
 export var get_decomposition = function (q) {
+	console.log(q)
 	var n = len (q);
 	var blocks = [];
 	var rows = (function () {
