@@ -68,11 +68,3 @@ def get_formatted_graded_autos(q):
                     matrix[block[j]][new_block[m]] = '*'
         autos.append(matrix)
     return autos
-
-
-# MAIN CODE EXECUTION
-
-q = [[1,1,-1],[1,1,-1],[-1,-1,1]]
-
-print(q)
-print(get_formatted_graded_autos(q))
