@@ -173,8 +173,5 @@ export var get_formatted_graded_autos = function (q) {
 	}
 	return autos;
 };
-export var q = [[1, 1, -(1)], [1, 1, -(1)], [-(1), -(1), 1]];
-print (q);
-print (get_formatted_graded_autos (q));
 
 //# sourceMappingURL=compute_graded_auto_groups.map
