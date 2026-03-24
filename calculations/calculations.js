@@ -97,7 +97,7 @@ document.getElementById("processBtn").addEventListener("click", () => {
     }
 
     const result = get_formatted_graded_autos(matrix);
-
+    console.log(result)
     const latex = matricesToLatex(result);
     const out = document.getElementById("automorphisms");
     out.innerHTML = latex;
@@ -118,6 +118,13 @@ function download(filename, text) {
 }
 
 document.getElementById("downloadBtn").addEventListener("click", () => {
-    const output = document.getElementById("automorphisms").textContent;
+    const matrix = getMatrix();
+
+    if (!matrix) {
+        alert("Please fill in all entries before processing.");
+        return;
+    }
+
+    const output = get_formatted_graded_autos(matrix);
     download("result.txt", output);
 });
