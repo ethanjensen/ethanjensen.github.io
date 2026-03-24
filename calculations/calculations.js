@@ -111,6 +111,17 @@ function download(filename, text) {
     URL.revokeObjectURL(url);
 }
 
+function numpyFormatMatrices(matrices) {
+    return matrices.map(matrix => {
+        const rows = matrix
+            .map(row => "  [" + row.join(" ") + "]")
+            .join("\n");
+
+        return "[\n" + rows + "\n]";
+    }).join("\n\n");  // blank line between matrices
+}
+
+
 document.getElementById("downloadBtn").addEventListener("click", () => {
     const matrix = getMatrix();
 
@@ -120,5 +131,5 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
     }
 
     const output = get_formatted_graded_autos(matrix);
-    download("result.txt", JSON.stringify(output, null, 2));
+    download("result.txt", numpyFormatMatrices(output));
 });
