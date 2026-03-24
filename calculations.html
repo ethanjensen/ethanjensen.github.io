@@ -21,8 +21,13 @@
     <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
     <div id="example-table"></div>
 
+    <input id="matrixSize" type="number" min="1" max="20" placeholder="Enter size (1–20)">
+    <button id="generateBtn">Generate Matrix</button>
+    <div id="matrixTable"></div>
+    <button id="processBtn">Process Matrix</button>
+
     <h2>Output</h2>
-    <div id="output"></div>
+    <div id="automorphisms"></div>
     <button id="downloadBtn">Download Output</button>
     <script type = "module" src="calculations/calculations.js"></script>
 
