@@ -50,8 +50,8 @@ function download(filename, text) {
 }
 
 document.getElementById("downloadBtn").addEventListener("click", () => {
-    const result = document.getElementById("output").textContent;
-    download("result.txt", result);
+    const output = document.getElementById("output").textContent;
+    download("result.txt", output);
 });
 
 result = get_formatted_graded_autos([[1,-1],[-1,1]]);
