@@ -19,16 +19,17 @@
       <li><a href="cv.html">CV</a></li>
     </ul>
 
-    <h2>Calculation Result</h2>
-
-    <input id="matrixSize" type="number" min="1" max="20" placeholder="Enter size (1–20)">
-    <button id="generateBtn">Generate Matrix</button>
-    <div id="matrixWrapper" style="display:inline-block;">
-        <div id="matrixTable"></div>
+    <h2>Specify Quantum Parameters</h2>
+    <div>
+        <input id="matrixSize" type="number" min="1" max="20" placeholder="Enter size (1–20)">
+        <button id="generateBtn">Generate Matrix</button>
+        <div id="matrixWrapper" style="display:inline-block;">
+            <div id="matrixTable"></div>
+        </div>
+        <button id="processBtn">Process Matrix</button>
     </div>
-    <button id="processBtn">Process Matrix</button>
 
-    <h2>Output</h2>
+    <h2>Graded Automorphism Group</h2>
     <div id="automorphisms"></div>
     <button id="downloadBtn">Download Output</button>
     <script type = "module" src="calculations/calculations.js"></script>

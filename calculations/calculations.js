@@ -92,7 +92,6 @@ document.getElementById("processBtn").addEventListener("click", () => {
     }
 
     const result = get_formatted_graded_autos(matrix);
-    console.log(result)
     const latex = matricesToLatex(result);
     const out = document.getElementById("automorphisms");
     out.innerHTML = latex;
@@ -121,5 +120,5 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
     }
 
     const output = get_formatted_graded_autos(matrix);
-    download("result.txt", output);
+    download("result.txt", JSON.stringify(output, null, 2));
 });
