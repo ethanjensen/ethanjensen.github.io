@@ -43,7 +43,7 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     matrixTable = new Tabulator("#matrixTable", {
         data: data,
         columns: columns,
-        layout: "fitColumns",
+        layout: "fitData",
         reactiveData: true,
         height: "auto"
     });
