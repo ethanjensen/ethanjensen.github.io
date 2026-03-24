@@ -67,20 +67,25 @@ function getMatrix() {
     return matrix;
 }
 
-function matrixToLatex(matrix) {
-    let rows = matrix.map(
-        row => row.join(" & ")
-    ).join(" \\\\ ");
+function matricesToLatex(matrices) {
+    // matrices is an array of 2D arrays
+    return matrices.map(matrix => {
+        const rows = matrix
+            .map(row => row.join(" & "))
+            .join(" \\\\ ");
 
-    return `\
+        return `
+\
 
 \[
-        \\begin{bmatrix}
-        ${rows}
-        \\end{bmatrix}
-    \\]
+\\begin{bmatrix}
+${rows}
+\\end{bmatrix}
+\\]
 
-`;
+
+        `;
+    }).join(",\ ");
 }
 
 document.getElementById("processBtn").addEventListener("click", () => {
@@ -93,7 +98,7 @@ document.getElementById("processBtn").addEventListener("click", () => {
 
     const result = get_formatted_graded_autos(matrix);
 
-    const latex = matrixToLatex(result);
+    const latex = matricesToLatex(result);
     const out = document.getElementById("automorphisms");
     out.innerHTML = latex;
     MathJax.typesetPromise();
