@@ -130,6 +130,8 @@ export function get_formatted_graded_autos(q) {
     const autos = [];
     const n = q.length;
     const [blocks, stabilizing_autos] = get_graded_autos(q);
+    console.log(blocks)
+    console.log(stabilizing_autos)
 
     for (const sigma of stabilizing_autos) {
         const matrix = Array.from({ length: n }, () =>
