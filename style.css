@@ -92,3 +92,15 @@ h1, h2 {
 .tg .tg-egga{font-family:Verdana, Geneva, sans-serif !important;font-size:16px;text-align:left;vertical-align:top}
 .tg .tg-sx3s{font-family:Verdana, Geneva, sans-serif !important;font-size:16px;text-align:center;vertical-align:top}
 .tg .tg-vurl{font-family:Verdana, Geneva, sans-serif !important;font-size:16px;text-align:right;vertical-align:top}
+
+#matrixWrapper {
+    display: inline-block;
+}
+
+#matrixTable .tabulator-table {
+    width: auto !important;   /* prevents full-page stretching */
+}
+
+#matrixTable {
+    display: inline-block;    /* keeps the table only as wide as needed */
+}

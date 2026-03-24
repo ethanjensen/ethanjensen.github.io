@@ -20,14 +20,19 @@
     </ul>
 
     <h2>Specify Quantum Parameters</h2>
-    <div>
+
+    <!-- Row for inputs and buttons -->
+    <div id="controls" style="margin-bottom: 1rem;">
         <input id="matrixSize" type="number" min="1" max="20" placeholder="Enter size (1–20)">
         <button id="generateBtn">Generate Matrix</button>
-        <div id="matrixWrapper" style="display:inline-block;">
-            <div id="matrixTable"></div>
-        </div>
         <button id="processBtn">Process Matrix</button>
     </div>
+
+    <!-- Matrix appears BELOW the buttons -->
+    <div id="matrixWrapper" style="display: inline-block; margin-top: 1rem;">
+        <div id="matrixTable"></div>
+    </div>
+
 
     <h2>Graded Automorphism Group</h2>
     <div id="automorphisms"></div>
