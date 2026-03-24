@@ -1,15 +1,21 @@
 import { Permutation } from './permutation.js';
 
-// q is assumed to be a square matrix: Array<Array<...>>
+function rowsEqual(a, b) {
+    if (a.length !== b.length) return false;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) return false;
+    }
+    return true;
+}
 
 export function get_decomposition(q) {
     const n = q.length;
     const blocks = [];
-    let rows = [...Array(n).keys()]; // [0, 1, ..., n-1]
+    let rows = [...Array(n).keys()];
 
     while (rows.length > 0) {
         const i = rows[0];
-        const block = rows.filter(j => q[i] === q[j]);
+        const block = rows.filter(j => rowsEqual(q[i], q[j]));
         rows = rows.filter(j => !block.includes(j));
         blocks.push(block);
     }
@@ -130,9 +136,6 @@ export function get_formatted_graded_autos(q) {
     const autos = [];
     const n = q.length;
     const [blocks, stabilizing_autos] = get_graded_autos(q);
-    console.log(q)
-    console.log(blocks)
-    console.log(stabilizing_autos)
 
     for (const sigma of stabilizing_autos) {
         const matrix = Array.from({ length: n }, () =>
