@@ -67,3 +67,5 @@ def get_formatted_graded_autos(q):
                     matrix[block[j]][new_block[m]] = '*'
         autos.append(matrix)
     return autos
+
+print(get_formatted_graded_autos([[1,1,1],[1,1,1],[1,1,1]]))

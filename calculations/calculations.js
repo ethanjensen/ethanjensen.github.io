@@ -45,7 +45,8 @@ document.getElementById("generateBtn").addEventListener("click", () => {
         columns: columns,
         layout: "fitData",
         reactiveData: true,
-        height: "auto"
+        height: "auto",
+        headerVisible: false
     });
 });
 
@@ -75,15 +76,9 @@ function matricesToLatex(matrices) {
             .join(" \\\\ ");
 
         return `
-\
-
-\[
 \\begin{bmatrix}
 ${rows}
 \\end{bmatrix}
-\\]
-
-
         `;
     }).join(",\ ");
 }
